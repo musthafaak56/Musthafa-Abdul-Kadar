@@ -1,0 +1,161 @@
+/* :root
+{
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-base: red;
+    --color-base2: black;
+    --color-brand: yellow;
+    --color-brand2: yellow;
+    --sidbar-width: 240px;
+} */
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	
+/* ============ desktop view .end// ============ */
+body
+{
+    background-color: rgb(4, 2, 14);
+    color: #b6cbce;
+}
+.navbar
+{
+    border-bottom: 2px solid rgba(201, 19, 19, 0.367);
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+.brandtext1
+{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 30px;
+}
+h1,h2,h3,h4,h5,h6
+{
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+.navlinks1:hover
+{
+    /* box-shadow: 0 4px 8px 0 rgba(146, 128, 247, 0.9), 0 6px 20px 5px rgba(132, 106, 247, 0.9); */
+}
+.full-height
+{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(201, 19, 19, 0.367);
+}
+.profilepic1
+{
+    filter: grayscale(5); 
+    border: 5px solid rgb(255, 255, 255); 
+    border-radius: 200px;
+    width: 100%;
+}
+.hmhdsp1
+{
+    color: rgb(240, 101, 101);
+    font-family: 'Philosopher', sans-serif;
+}
+.hmpara1
+{
+    font-family: 'Poppins', sans-serif;
+}
+.btn1
+{
+    background-color: rgb(240, 101, 101);
+    color: rgb(9, 7, 20);
+    font-family: 'Poppins', sans-serif;
+}
+.link-custom
+{
+    font-weight: 700;
+    position: relative;
+}
+.link-custom::after
+{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+.link-custom:hover::after
+{
+    width: 100%;
+}
+.bg-base
+{
+    background-image: radial-gradient(rgb(7, 3, 89),rgb(11, 12, 65));
+    background-color: rgb(6, 6, 32);
+    border-radius: 15px;
+}
+.bg-base:hover .work-imgs
+{
+    transform: scale(1.1);
+    border: 3px solid rgb(51, 14, 14);
+    transition: 0.5s;
+}
+.service
+{
+    border-radius: 15px;
+}
+.shadow-effect
+{
+    transition:all 0.5s;
+}
+.shadow-effect:hover
+{
+    box-shadow: 0 0 0 5px rgb(255, 0, 0) ;
+}
+.icon-box
+{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    color: white;
+}
+.work-imgs
+{
+    border-radius: 15px;
+    border: 2px solid rgb(57, 7, 7);
+    transition: 0.5s;
+}
+.text-brand
+{
+    color: rgb(244, 244, 109);
+}
+#contact .form-control
+{
+    background-color: rgb(34, 28, 78);
+    box-shadow: none;
+}
+#contact .form-control::placeholder
+{
+    color: rgba(247, 246, 167, 0.519);
+}
+#contact input.form-control
+{
+    height: 44px;
+    color: rgb(255, 255, 255);
+}
